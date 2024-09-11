@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeatGeek</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../style/home.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="../pages/home.html"><img src="../logo/logo.png" alt="logo"></a>
+            </div>
+
+            <div class="header-actions">
+                <a href="../pages/home1.html">
+                    <span class="currency"><img src="../images/srp.png" alt="usd" class="srpflag"></span>
+                </a>
+                <a href="../index.html">
+                    <span class="currency"><img src="../images/eng.png" alt="usd" class="engflag"></span>
+                </a>
+                <a href="../pages/home1.html"><button>Početna</button></a>
+                <a href="../pages/sell1.html"><button>O nama</button></a>
+                <a href="../pages/support1.html"><button>Kontakt</button></a>
+                <a href="../pages/login1.html"><button>Prijava</button></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="search-container">
+                <h1>Jer uživo je bolje.</h1>
+                <p>Vaša najbolja noć ikada vas čeka!</p>
+                <div class="see-more-button">
+                    <a href="../pages/api1.html"><button>Karte</button></a>
+                </div>
+            </div>
+        </section>
+        <section class="browse-events">
+            <h2>Događaji</h2>
+            <h3>Beograd, SR</h3>
+            <div class="filters">
+                <button>Promeni lokaciju</button>
+                <!-- <button>Filtriraj po datumu</button> -->
+            </div>
+        </section>
+        <section class="categories">
+            <h2>Kategorije</h2>
+            <div class="category-slider">
+                <button class="slider-prev">&lt;</button>
+                <div class="categories-container">
+                    <div class="category">
+                        <img src="../images/concerts.png" alt="Concerts">
+                        <span>Koncerti</span>
+                    </div>
+                    <div class="category">
+                        <img src="../images/nfl-image.jpg" alt="NFL Football">
+                        <span>NFL Fudbal</span>
+                    </div>
+                    <div class="category">
+                        <img src="../images/mlb-image.jpg" alt="MLB Baseball">
+                        <span>MLB Bejzbol</span>
+                    </div>
+                    <div class="category">
+                        <img src="../images/nba-image.jpg" alt="NBA Basketball">
+                        <span>NBA Košarka</span>
+                    </div>
+                </div>
+                <button class="slider-prev" onclick="scrollPrev()">&lt;</button>
+                <button class="slider-next" onclick="scrollNext()">&gt;</button>
+            </div>
+        </section>
+        <section class="top-selling">
+            <h2>Najprodavanije turneje koncerata</h2>
+            <div class="top-selling-slider">
+                <button class="slider-prev">&lt;</button>
+                <div class="top-selling-container">
+                    <div class="top-selling-item">
+                        <img src="../images/sabrina.png" alt="Sabrina Carpenter">
+                        <span>Sabrina Karpenter</span>
+                    </div>
+                    <div class="top-selling-item">
+                        <img src="../images/eagles.png" alt="Eagles">
+                        <span>Iglsi</span>
+                    </div>
+                    <div class="top-selling-item">
+                        <img src="../images/post.png" alt="Post Malone">
+                        <span>Post Malone</span>
+                    </div>
+                    <div class="top-selling-item">
+                        <img src="../images/zayn.png" alt="Zayn Malik">
+                        <span>Zayn Malik</span>
+                    </div>
+                </div>
+                <button class="slider-next">&gt;</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2024 SEATGEEK. Sva prava zadržana.</p>
+        </div>
+    </footer>
+    
+    <script src="app1.js"></script>
+</body>
+</html>

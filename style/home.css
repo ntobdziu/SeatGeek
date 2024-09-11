@@ -1,0 +1,295 @@
+/* Osnovne postavke tela */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+/* Navigacija */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+.logo {
+    width: 25%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.header-actions button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Hero sekcija */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    /* Original background setup restored */
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.345), rgba(0, 0, 0, 0.98)), url('../images/pictureHall.jpg');
+}
+
+.see-more-button {
+    margin-top: 20px;
+}
+
+.see-more-button button {
+    background-color: #FF4500;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.see-more-button button:hover {
+    background-color: #e63946;
+}
+.search-container {
+    text-align: center;
+}
+
+.search-container h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.search-container p {
+    margin: 10px 0;
+}
+
+.search-bar {
+    margin-top: 20px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Browse events sekcija */
+.browse-events {
+    padding: 20px 20px; /* Smanjeno da se umanji prazni prostor */
+    text-align: center;
+    margin-top: -20px; /* Pomera sekciju nagore, smanjuje crni prostor */
+}
+
+.browse-events h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.browse-events h3 {
+    font-size: 20px;
+    color: gray;
+}
+
+.filters {
+    margin-top: 20px;
+}
+
+.filters button {
+    background-color: #FF4500;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+/* Kategorije i top-selling */
+.categories,
+.top-selling {
+    padding: 80px 50px;
+}
+
+.categories h2,
+.top-selling h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.category-slider,
+.top-selling-slider {
+    display: flex;
+    align-items: center;
+}
+
+/* Kontejner za kategorije */
+.categories-container,
+.top-selling-container {
+    display: flex;
+    overflow: hidden;
+    /* Uklanjamo sav overflow */
+    gap: 20px;
+    width: 100%;
+    padding: 40px 0; /* Smanjeno da umanji prazan prostor */
+}
+
+/* Pojedinačna kategorija */
+.category,
+.top-selling-item {
+    flex: 0 0 auto;
+    width: 320px;
+    /* Fiksirana širina */
+    height: 150px;
+    /* Fiksirana visina */
+    text-align: center;
+    background-color: #111;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.category img,
+.top-selling-item img {
+    width: 100%;
+    /* Prilagodi širini kontejnera */
+    height: 100%;
+    /* Prilagodi visini kontejnera */
+    object-fit: cover;
+    /* Podesi sliku da zadrži proporcije i ispuni kontejner */
+    border-radius: 10px;
+}
+
+/* Tekst ispod slika */
+.category span,
+.top-selling-item span {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Tekst koji je predugačak će biti skraćen */
+}
+
+/* Slider dugmad */
+.slider-prev,
+.slider-next {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-prev {
+    left: 10px;
+}
+
+.slider-next {
+    right: 10px;
+}
+
+.slider-prev:hover,
+.slider-next:hover {
+    background-color: #555;
+}
+
+/* Hover efekat za kategorije i top-selling */
+.category:hover,
+.top-selling-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    /* Dodaj efekat senke pri hoveru */
+}
+
+/* Flag styles */
+.engflag {
+    width: 35px;
+    height: 30px;
+}
+
+.srpflag {
+    width: 35px;
+    height: 21px;
+    padding-top: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    border-top: 1px solid #333;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 32px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ccc;
+}

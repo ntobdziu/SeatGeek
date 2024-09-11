@@ -1,0 +1,199 @@
+/* Login Page Specific Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF4500;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.header-actions button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+/* Support Section */
+.support-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.support-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.support-form {
+    background-color: #111;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.support-form div {
+    margin-bottom: 15px;
+}
+
+.support-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.support-form input,
+.support-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+}
+
+.support-form textarea {
+    height: 120px;
+    resize: none; /* Onemogućava promenu veličine */
+}
+
+.support-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF4500;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.support-form button:hover {
+    background-color: #e63946; /* Osvetljenje dugmeta pri hoveru */
+}
+
+.support-section p {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.support-section a {
+    color: #FF4500;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.support-section a:hover {
+    text-decoration: underline;
+}
+
+.engflag{
+    width: 35px;
+    height: 30px;
+}
+.srpflag{
+    width: 35px;
+    height: 21px;
+    padding-top: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    border-top: 1px solid #333;
+}
+
+.logo {
+    width: 25%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 32px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1); /* Povećanje ikona na hover */
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
